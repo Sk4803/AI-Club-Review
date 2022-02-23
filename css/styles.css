@@ -6,19 +6,23 @@ body{
   padding: 0;
 }
 
+hr{
+  border: 3px solid;
+}
+
 /* Section */
 
-.image-section{
+.title-section{
   height: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(https://wallpaperaccess.com/full/1398312.jpg);
 }
 
 /* Container */
 
 .container-fluid{
-  text-align: left;
+  text-align: center;
   padding: 0;
 }
 
@@ -26,38 +30,39 @@ body{
 
 .navbar{
   background-color: black;
-  /* color: #FFF; */
   display: block;
   float: left;
   font-size: 1.5rem;
-  font-weight: bold;
   height: 50px;
   margin: 0;
   padding: 0 5%;
   position: relative;
   text-align: left;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-item{
-  color: #FFF;
   margin: 0 70px;
-
+  padding-left: 15px;
 }
 
-.nav-link:hover{
-  color: red;
-  cursor: pointer;
+.nav-link{
+  color: #FFF;
 }
+
+#navbar-color li a.nav-link:hover{
+  color: cyan;
+  font-weight: 600;
+  padding: 0 5px;
+}
+
 
 /* Title-Images */
 
 .title-images{
   width: 100%;
   padding: 3% 5%;
-  position: relative;
-  z-index: 1;
   margin-top: 4px;
   margin-left: 5px;
 }
@@ -66,4 +71,39 @@ body{
   padding: 2% 6%;
   text-align: center;
   width: 33%;
+}
+
+/* Hero Section */
+
+.hero-box{
+  color: #FFF;
+  margin: 22% 25%;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+}
+
+.heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.date-venue{
+  margin-top: 20px;
+  color: yellow;
+}
+
+.heading{
+  /* For single color */
+
+  color: #F76E11;
+
+  /* To get multicolor text, uncomment the following */
+  
+  /* background-image: linear-gradient(to right, violet, green, yellow, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent; */
+  font-weight: bolder;
 }
